@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #C0C0C0;
+    font-family: cursive;
+}
+
+
+.primiuntext {
+    display: block;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+}
+
+.mainmenu {
+    width: 85%;
+    margin: 10px auto;
+    background-color: #915f0a;
+
+}
+
+.mainmenu ul {
+    list-style: none;
+}
+
+
+.lista > li {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+}
+
+.lista > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.lista li a:hover {
+    color: #1c44a0;
+    transition: all .3s;
+}
+
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .7s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: serif;
+    text-decoration: none;
+}
+
+.mainmenu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.wrap {
+    width: 90%;
+    max-width: 700px;
+    padding: 40px;
+    margin: auto;
+    background: #f2f2f2;
+    box-shadow: 0px 0px 3px grey;
+}
+
+.contenedor {
+    width: 100%;
+    color: #f2f2f2;
+    padding: 50px;
+}
+
+.contenedor .formula {
+    width: 100%;
+    margin: auto;
+}
+
+.contenedor .formula .capturador {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.contenedor .formula .capturador input[type="text"],
+.contenedor .formula .capturador input[type="email"],
+.contenedor .formula .capturador input[type="password"] {
+    font-size: 1.2em;
+    color: #303F9F;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #BBDEFB;
+}
+
+.contenedor .formula .capturador input[type="text"]:focus,
+.contenedor .formula .capturador input[type="text"]:active,
+.contenedor .formula .capturador input[type="email"]:focus,
+.contenedor .formula .capturador input[type="email"]:active,
+.contenedor .formula .capturador input[type="password"]:focus,
+.contenedor .formula .capturador input[type="password"]:active {
+    outline: none;
+    border-bottom: 2px solid #303F9F;
+}
+
+.contenedor-formulario .formulario .input-group input[type="text"].error,
+.contenedor-formulario .formulario .input-group input[type="email"].error,
+.contenedor-formulario .formulario .input-group input[type="password"].error {
+    border-bottom: 2px solid #D32F2F;
+}
+
+.contenedor-formulario .formulario .input-group input[type="text"].error + label,
+.contenedor-formulario .formulario .input-group input[type="email"].error + label,
+.contenedor-formulario .formulario .input-group input[type="password"].error + label {
+    color: #D32F2F;
+}
+
+.contenedor-formulario .formulario .input-group label {
+    color: #303F9F;
+}
+
+.contenedor-formulario .formulario .input-group label.label {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+
+.contenedor-formulario .formulario .input-group label.label.active {
+    top: -12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #B6B6B6;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label,
+.contenedor-formulario .formulario .input-group.radio label {
+    display: inline-block;
+    cursor: pointer;
+    color: #303F9F;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:hover,
+.contenedor-formulario .formulario .input-group.radio label:hover {
+    background: #bbdefb;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:before,
+.contenedor-formulario .formulario .input-group.radio label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #303F9F;
+}
+
+.contenedor-formulario .formulario .input-group.error label {
+    color: #D32F2F;
+}
+
+.contenedor-formulario .formulario .input-group.error label:hover {
+    background: rgba(211, 47, 47, 0.2);
+}
+
+.contenedor-formulario .formulario .input-group.error label:before {
+    border: 2px solid #D32F2F;
+}
+
+.contenedor-formulario .formulario .input-group.radio input[type="radio"] {
+    display: none;
+}
+
+.contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label:before {
+    display: none;
+}
+
+.contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label {
+    padding: 5px 15px;
+    background: #303F9F;
+    border-radius: 2px;
+    color: #f2f2f2;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:before {
+    border-radius: 3px;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label:before {
+    display: none;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label {
+    background: #303F9F;
+    color: #f2f2f2;
+    padding: 5px 15px;
+}
+
+.contenedor-formulario .formulario input[type="submit"] {
+    background: #303F9F;
+    border-radius: 1px;
+    border: 2px solid #f2f2f2;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.contenedor-formulario .formulario input[type="submit"]:hover {
+    background: #1976D2;
+}
