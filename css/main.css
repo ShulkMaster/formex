@@ -75,6 +75,7 @@ body {
     opacity: 1.0;
     width: 90%;
     max-width: 900px;
+    min-width: 400px;
     margin: auto;
     background: #f2f2f2;
     box-shadow: 9px 6px 15px #424242;
@@ -120,7 +121,7 @@ body {
     font-size: 1.2em;
     color: #303F9F;
     width: 85%;
-    margin-left: 20px;
+    margin-left: 2em;
     outline: none;
     padding: 15px;
     background: none;
@@ -209,7 +210,7 @@ body {
     background-color: #1f5ccf;
     color: aliceblue;
     transition: all 0.3s ease;
-    margin-left: 20px;
+    margin-left: 2em;
     padding: 15px;
 }
 
@@ -249,4 +250,11 @@ footer .pie{
     width: 70%;
     box-sizing: border-box;
     padding: 2em;
+}
+
+.colores{
+    width: 35%;
+    height: 3em;
+    margin-left: 2em;
+    outline: none;
 }
