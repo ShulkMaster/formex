@@ -32,59 +32,82 @@
     <main class="contenedor">
         <form action="#" class="formula" name="registro" method="post">
             <section class="wrap">
-               <h2 class="primiuntext">Personal:</h2>
-                <section  class="capturador">
-                        <input type="text" placeholder="Ingrese su nombre" id="nombre" maxlength="250" name="nombre">
+                <section class="card">
+                    <h2 class="primiuntext">Personal:</h2>
+
+                    <div class="capturador">
                         <label for="nombre">Nombre:</label>
+                        <input type="text" placeholder="Ingrese su nombre" id="nombre" maxlength="250" name="nombre">
+                    </div>
 
-                        <input type="date" id="datobir">
-                        <label for="datobir">Dia de nacimiento</label>
-                        
-                        <input type="text" id="anims">
-                        <label for="anims">Animal Favorito</label>
+                    <div class="capturador">
+                        <label for="datobir">Dia de nacimiento:</label>
+                        <input type="date" required="required" id="datobir">
+                    </div>
 
+                    <div class="capturador">
+                        <label for="anims">Animal Favorito:</label>
+                        <input type="text" id="anims" placeholder="Ingrese animal favorito">
+                    </div>
+
+                    <div class="capturador">
                         <label for="colo">Color Favorito</label>
                         <input type="color" id="colo">
+                    </div>
                 </section>
 
-                <section class="capturador">
+                <section class="card">
                     <h2 class="primiuntext">Cuenta:</h2>
-                    
-                    <label for="mail">Email:</label>
-                    <input type="email" placeholder="Ingrese su email" id="mail" maxlength="250" name="mail">
-                  
-                    <label for="passwd">Contraseña:</label>
-                    <input type="password" placeholder="contraseña" id="passwd" name="passwd">
 
-                    <label for="passwd2">Contraseña verificacion:</label>
-                    <input type="password" placeholder="verifique contraseña" id="passwd2" name="passwd2">
+                    <div class="capturador">
+                        <label for="mail">Email:</label>
+                        <input type="email" placeholder="Ingrese su email" id="mail" maxlength="250" name="mail">
+                    </div>
+
+                    <div class="capturador">
+                        <label for="passwd">Contraseña:</label>
+                        <input type="password" placeholder="contraseña" id="passwd" name="passwd">
+                    </div>
+
+                    <div class="capturador">
+                        <label for="passwd2">Contraseña verificacion:</label>
+                        <input type="password" placeholder="verifique contraseña" id="passwd2" name="passwd2">
+                    </div>
                 </section>
 
-                <section class="capturador">
+                <section class="card">
                     <h2 class="primiuntext">Contacto:</h2>
-                    <label for="adds">Direción</label>
-                    <input type="text" id="adds" placeholder="Dirección" maxlength="500">
 
-                    <label for="city">Ciudad</label>
-                    <input type="text" id="city" placeholder="Ciudad" maxlength="200">
+                    <div class="capturador">
+                        <label for="adds">Direción</label>
+                        <input type="text" id="adds" placeholder="Dirección" maxlength="500">
+                    </div>
 
-                    <label for="pais">Pais</label>
-                    <select name="pais" id="pais">
+                    <div class="capturador">
+                        <label for="city">Ciudad</label>
+                        <input type="text" id="city" placeholder="Ciudad" maxlength="200">
+                    </div>
+
+                    <div class="capturador">
+                        <label for="pais">Pais</label>
+                        <select name="pais" id="pais">
                     <option value="Venezuela">Venezuela</option>
                     <option value="Argentina">Argentina</option>
                     <option value="El Salvador">El Salvador</option>
                     <option value="Guatemala">Guatemala</option>
                     <option value="Honduras">Honduras</option>
                     <option value="Nicaragua">Nicaragua</option>
-                </select>
-                    <input type="select" id="pais" placeholder="Pais" maxlength="150">
+                    </select>
+                    </div>
 
-                    <label for="phone">Telefono</label>
-                    <input type="tel" id="phone" placeholder="xxxxxxxx" maxlength="8">
+                    <div class="capturador">
+                        <label for="phone">Telefono</label>
+                        <input type="tel" id="phone" placeholder="xxxxxxxx" maxlength="8">
+                    </div>
 
                 </section>
-
                 <input type="submit" value="Enviar">
+
             </section>
         </form>
     </main>
