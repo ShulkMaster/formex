@@ -75,10 +75,9 @@ body {
     opacity: 1.0;
     width: 90%;
     max-width: 900px;
-    padding: 40px;
     margin: auto;
     background: #f2f2f2;
-    box-shadow: 8px 10px 20px #7383a1;
+    box-shadow: 9px 6px 15px #424242;
 }
 
 .contenedor {
@@ -230,7 +229,10 @@ body {
     padding: 15px;
     width: 65%;
     transition: all 0.3s ease;
-    margin: auto;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 .contenedor .formula input[type="submit"]:hover {

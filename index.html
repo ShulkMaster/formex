@@ -6,6 +6,7 @@
     <title>Formex</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/transform.css">
     <!--<script src="js/scripy.js"></script>-->
 </head>
 
@@ -13,31 +14,31 @@
     <header>
         <nav class="mainmenu">
             <ul class="lista">
-                <li><a href="#">Modulo</a>
+                <li><a href="#">X</a>
                     <ul class="submenu">
-                        <li><a href="#">Helix</a></li>
-                        <li><a href="#">Sidebar</a></li>
+                        <li><a href="#">X1</a></li>
+                        <li><a href="#">X2</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Music</a>
+                <li><a href="#">Y</a>
                     <ul class="submenu">
-                        <li><a href="#">Black</a></li>
-                        <li><a href="#">White</a></li>
+                        <li><a href="#">Y1</a></li>
+                        <li><a href="#">Y2</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-    <h1 class="primiuntext">Formulario XP</h1>
     <main class="contenedor">
         <form action="#" class="formula" name="registro" method="post">
-            <section class="wrap">
-                <section class="card">
-                    <h2 class="primiuntext">Personal:</h2>
-
+            <section class="wrap card">
+                <h1 class="primiuntext">Formulario XP</h1>
+                <hr>
+                <h2 class="primiuntext">Personal:</h2>
+                <fieldset class="card">
                     <div class="capturador">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" placeholder="Ingrese su nombre" id="nombre" maxlength="250" name="nombre">
+                        <input type="text" required="required" placeholder="Ingrese su nombre" id="nombre" maxlength="250" name="nombre">
                     </div>
 
                     <div class="capturador">
@@ -54,32 +55,32 @@
                         <label for="colo">Color Favorito</label>
                         <input type="color" id="colo">
                     </div>
-                </section>
+                </fieldset>
 
-                <section class="card">
+                <fieldset class="card">
                     <h2 class="primiuntext">Cuenta:</h2>
 
                     <div class="capturador">
                         <label for="mail">Email:</label>
-                        <input type="email" placeholder="Ingrese su email" id="mail" maxlength="250" name="mail">
+                        <input type="email" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Ingrese su email" id="mail" maxlength="250" name="mail">
                     </div>
 
                     <div class="capturador">
                         <label for="passwd">Contraseña:</label>
-                        <input type="password" placeholder="contraseña" id="passwd" name="passwd">
+                        <input type="password" required="required" pattern=".{6,}" placeholder="contraseña" id="passwd" name="passwd">
                     </div>
 
                     <div class="capturador">
                         <label for="passwd2">Contraseña verificacion:</label>
-                        <input type="password" placeholder="verifique contraseña" id="passwd2" name="passwd2">
+                        <input type="password" required="required" pattern=".{6,}" placeholder="verifique contraseña" id="passwd2" name="passwd2">
                     </div>
-                </section>
+                </fieldset>
 
-                <section class="card">
+                <fieldset class="card">
                     <h2 class="primiuntext">Contacto:</h2>
 
                     <div class="capturador">
-                        <label for="adds">Direción</label>
+                        <label for="adds" pattern="[a-z0-9]">Direción</label>
                         <input type="text" id="adds" placeholder="Dirección" maxlength="500">
                     </div>
 
@@ -102,12 +103,32 @@
 
                     <div class="capturador">
                         <label for="phone">Telefono</label>
-                        <input type="tel" id="phone" placeholder="xxxxxxxx" maxlength="8">
+                        <input type="tel"  required="required" pattern="[0-9]+" id="phone" placeholder="xxxxxxxx" maxlength="8">
                     </div>
 
-                </section>
-                <input type="submit" value="Enviar">
+                </fieldset>
 
+                <fieldset class="card">
+                    <div class="enclosure">
+                        <div class="cube">
+                            <div class="front">
+                                <p>Hola</p>
+                            </div>
+                            <div class="back">
+                                <p>Hola</p>
+                            </div>
+                            <div class="top"></div>
+                            <div class="bottom"></div>
+                            <div class="left">
+                                <p>Hola</p>
+                            </div>
+                            <div class="right">
+                                <p>Hola</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar">
             </section>
         </form>
     </main>
