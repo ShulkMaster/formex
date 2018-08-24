@@ -21,7 +21,7 @@ body {
 .mainmenu {
     width: 85%;
     margin: 10px auto;
-    background-color: #915f0a;
+    background-color: #303F9F;
 
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .lista li a:hover {
-    color: #1c44a0;
+    background-color: #1976D2;
     transition: all .3s;
 }
 
@@ -238,4 +238,15 @@ body {
 .contenedor .formula input[type="submit"]:hover {
     background: #1976D2;
     width: 75%;
+}
+
+footer{
+background-color: black;
+color: white;
+}
+
+footer .pie{
+    width: 70%;
+    box-sizing: border-box;
+    padding: 2em;
 }
